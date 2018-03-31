@@ -2,18 +2,17 @@
 <html ng-app>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>Admin Panel</title>
 
-    <link rel="stylesheet" href="../../bootstrap-4.0.0-dist/css/bootstrap.min.css">
-    <script src="../../bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-    <!-- Custom styles for this template -->
-    <link href="../../style/album.css" rel="stylesheet">
-    <!--  JQuery  -->
-    <script src="../../js/libs/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
     <script src="js/angular.min.js"></script>
 
 </head>
@@ -48,6 +47,45 @@
         </div>
     </section>
 
+    <h1> Administrator</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>User Name</th>
+            <th>Password</th>
+            <th>Role</th>
+            <th>Edit</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Asad</td>
+            <td>1234</td>
+            <td>Customer</td>
+            <td>
+                <button type="button" class="btn-info btn-sm">Edit</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Waqas</td>
+            <td>1234</td>
+            <td >admin</td>
+            <td>
+                <button type="button" class="btn-info btn-sm">Edit</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Danish</td>
+            <td>1234</td>
+            <td>idk</td>
+            <td>
+                <button type="button" class="btn-info btn-sm">Edit</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!--
     <div class="album py-5 bg-light">
         <div class="container">
 
@@ -72,6 +110,7 @@
             </div>
         </div>
     </div>
+    -->
 
 </main>
 

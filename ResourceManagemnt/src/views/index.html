@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resource Management</title>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+
+    <script src="app.js"></script>
+
+
+</head>
+<body ng-app="myApp">
+
+<div  ng-controller="getResourceController">
+<!--<button type = "button" onclick = "http://localhost:8080/getResourceService/resource">Get Resource</button>-->
+<button id="getR" type="button" ng-click="resources()">Get Resource</button>
+
+<table border="1px">
+    <tr>
+        <th>Name</th>
+        <th>Start Shift Time</th>
+        <th>Specialization</th>
+        <th>region</th>
+        <!--<th>Weekend</th>-->
+        <!--<th>Weekdays</th>-->
+        <!--<th>Priority</th>-->
+    </tr>
+    <tr ng-repeat="resource in resources">
+        <td>{{resource.id}}</td>
+        <td>{{resource.userId}}</td>
+        <td>{{resource.title}}</td>
+        <td>{{resource.body}}</td>
+        <!--<td>{{resource.weekend}}</td>-->
+        <!--<td>{{resource.weekdays}}</td>-->
+        <!--<td>{{resource.priority}}</td>-->
+    </tr>
+</table>
+
+</div>
+</body>
+</html>
